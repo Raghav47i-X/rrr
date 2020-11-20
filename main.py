@@ -19,16 +19,16 @@ dis = 0
 global buycmd
 buycmd = "ON"
 
-client = MongoClient('')#Your Database Url
-db = client.get_database("")#Your db name
+client = MongoClient('mongodb+srv://blAckk:blAckk@cluster0.rm8kr.mongodb.net/HQ Trivia?retryWrites=true&w=majority')#Your Database Url
+db = client.get_database("HQ Trivia")#Your db name
 database = db.user
 lifebase = db.life
 number_base = db.number
 pending_base = db.pending
 numbers_base = db.numbers
-white = []#Discord ID For Owner
-black = []#Discord ID2 For Owner
-red = [] #Stock Adder ID
+white = [756435443146555403]#Discord ID For Owner
+black = [756435443146555403]#Discord ID2 For Owner
+red = [756435443146555403] #Stock Adder ID
 def rand():
     ran = random.randint(3,12)
     x = "1234567890"
